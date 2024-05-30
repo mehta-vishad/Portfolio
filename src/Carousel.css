@@ -1,0 +1,29 @@
+.carousel {
+    overflow-x: hidden;
+    white-space: nowrap;
+    width: 100vw;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .carousel-track {
+    display: flex;
+    animation: scroll 30s linear infinite;
+  }
+  
+  .carousel-image {
+    margin-right: 50px; /* Adjust space between images */
+    height: 80px;
+    width: 80px; /* Fixed width for images */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* Scroll exactly the width of a single set of images */
+      transform: translateX(calc(-1 * (70px + 50px) * (18)));
+    }
+  }
+  

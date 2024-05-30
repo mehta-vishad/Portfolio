@@ -1,0 +1,123 @@
+/* src/components/EntryPage.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400&display=swap');
+
+
+.entry-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    padding-right: 20%;
+    padding-left: 20%;
+    background-color: black;
+    overflow: hidden;
+}
+.io-color {
+    color: #8A2BE2;
+}
+  
+
+.entry-subtext {
+    color: #ccc; /* Light grey color for the subtext */
+    font-size: 1.2rem; /* Smaller font size than the main text */
+    margin-top: 10px; /* Spacing above the subtext */
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.top-left-section {
+    flex: 1;
+    display: flex;
+    margin-top: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Padding to ensure the image is not too close to the edge */
+}
+
+.entry-text {
+    font-family: 'Bowlby One', cursive;
+    font-size: 3rem;
+}
+
+.cursor {
+    opacity: 0;
+    background-color: white;
+    width: 15px; /* Makes the cursor fatter */
+    height: 55px; /* Adjust height to match your font size */
+    display: inline-block;
+    margin-left: 5px;
+    animation: blink-animation 1s infinite;
+}
+
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.visible {
+    opacity: 1;
+}
+
+.gif-image {
+    height: 120%;
+    width: 140%;
+    object-fit: contain; /* Ensures the image is fully visible and maintains aspect ratio */
+}
+
+.hint {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.exclamation-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    padding: 10px; /* Adjust the padding to make the circle size you want */
+    background-color: grey; /* This is the color of the circle */
+    border-radius: 50%; /* This makes the background into a circle */
+    display: inline-flex; /* This allows us to center the text inside the circle */
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem; /* Make the circle a fixed width */
+    height: 1.5rem; /* Make the circle a fixed height */
+}
+
+.shift-image {
+    height: 40px;
+    width: 90px; /* Fixed height for the key images */
+    margin: 0 10px; /* Margins to space out the images and text */
+}
+
+.dot-image {
+    height: 40px;
+    width: 40px; /* Fixed height for the key images */
+    margin: 0 5px; /* Margins to space out the images and text */
+}
+
+.pressed {
+    transform: scale(1.2); /* Make the image larger to indicate it's pressed */
+  }

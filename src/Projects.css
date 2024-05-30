@@ -1,0 +1,153 @@
+/* Import the font if not already done */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&display=swap');
+
+.projects-container {
+  width: 75%;
+  margin: 0 auto; /* This centers the container */
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+
+.projects-container.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.projects-container.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.projects-title {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 2px; /* Reduced gap between tiles */
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 150px); /* Adjust rows to accommodate all tiles */
+}
+
+.project-tile {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 0; /* Remove border radius for sharp edges */
+  overflow: hidden;
+}
+
+.project-tile-0 {
+  grid-column: span 12;
+  grid-row: span 3;
+}
+
+.project-tile-1 {
+  grid-column: span 5;
+  grid-row: span 2;
+}
+
+.project-tile-2 {
+  grid-column: span 7;
+  grid-row: span 2;
+}
+
+.project-tile-3 {
+  grid-column: span 7;
+  grid-row: span 2;
+}
+
+.project-tile-4 {
+  grid-column: span 5;
+  grid-row: span 2;
+}
+
+.project-tile-5 {
+  grid-column: span 12;
+  grid-row: span 2; /* Ensure it has its own row */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s; /* Add transition effect */
+}
+
+.project-title {
+  color: white;
+  font-size: 2.5em; /* Make the text bigger */
+  font-weight: bold;
+  text-align: left; /* Align text to the left */
+  font-family: 'Libre Franklin', sans-serif; /* Use Libre Franklin font */
+  position: absolute;
+  bottom: 10px; /* Align title text to the bottom of the tile */
+  left: 20px; /* Align title text to the left of the tile */
+  transform: translateY(100%); /* Initially move title text below the tile */
+  transition: transform 0.3s; /* Add transition effect */
+}
+
+.project-tile:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.project-tile:hover .project-title {
+  transform: translateY(0); /* Move title text up on hover */
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    width: 90%; /* Use more width on smaller screens */
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 150px); /* Increase rows for smaller screens */
+  }
+
+  .project-tile-0 {
+    grid-column: span 6;
+  }
+
+  .project-tile-1, .project-tile-2, .project-tile-3, .project-tile-4 {
+    grid-column: span 6;
+    grid-row: span 2;
+  }
+
+  .project-tile-5 {
+    grid-column: span 6;
+    grid-row: span 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    width: 100%; /* Use full width on very small screens */
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 100px);
+  }
+
+  .project-tile-0 {
+    grid-column: span 2;
+  }
+
+  .project-tile-1, .project-tile-2, .project-tile-3, .project-tile-4, .project-tile-5 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}

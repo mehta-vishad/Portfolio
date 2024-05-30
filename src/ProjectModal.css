@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&display=swap');
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+  max-height: 90%;
+  background: #fff;
+  padding: 20px;
+  overflow-y: auto;
+  color: #000;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content.dark {
+  background: #333;
+  color: #fff;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.modal-title-container {
+  display: flex;
+  justify-content: space-between; /* Align items with space between */
+  align-items: center; /* Vertically center items */
+}
+
+.modal-title {
+  font-size: 2em; /* Decreased font size */
+  margin-bottom: 20px; /* Adjusted margin */
+  text-align: left; /* Align to the left */
+}
+
+.modal-body {
+  padding-top: 40px; /* Added more padding to the top */
+}
+
+.modal-main {
+  display: flex;
+  gap: 20px;
+}
+
+.modal-image-container {
+  width: 50%;
+  margin-top: 40px;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.modal-text {
+  width: 50%;
+  text-align: left;
+}
+
+.modal-text h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.modal-description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-icon {
+  width: 50px;
+  height: 50px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+.key-features {
+  margin-top: 40px; /* Add margin to separate key features from other content */
+}
+
+.key-features h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.challenges-solutions {
+  margin-top: 20px; /* Add margin to separate challenges and solutions from other content */
+}
+
+.challenges-solutions h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .modal-title {
+    font-size: 1.5em;
+  }
+
+  .modal-main {
+    flex-direction: column;
+  }
+
+  .modal-image-container, .modal-text {
+    width: 100%;
+  }
+
+  .tech-icon {
+    width: 40px;
+    height: 40px;
+  }
+}

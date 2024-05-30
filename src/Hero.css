@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;900&display=swap');
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 0 100px; /* Add padding to the left and right */
+  height: 100vh;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 100px; /* Padding from the left */
+}
+
+.hero-text h1 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 900;
+  font-size: 4.5em;
+  line-height: 1.2;
+  margin: 0;
+  animation: emergeFromWater 2s ease-out forwards;
+}
+
+@keyframes emergeFromWater {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.highlight {
+  color: blueviolet;
+}
+
+.hero-subtext {
+  flex: 1;
+  border-radius: 500px 0 0 500px; /* Rounded on the left side */
+  padding: 10em; /* Adjust padding as necessary */
+  max-width: 55%;
+  margin-top: 50%;
+  margin-right: -100px;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+  height: 75%;
+  position: relative;
+  background-color: white !important
+  
+}
+.introduction{
+  margin-right: 20px;
+}
+.hero-subtext p,
+.introduction {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #000;
+  line-height: 1.5;
+}
+
+.name-highlight {
+  font-weight: bold; /* Adjust this value as needed to achieve the desired weight */
+  color: blueviolet;
+}
+
+.hero-subtext p span {
+  color: blueviolet; /* Sets the text color */
+  font-weight: bold; /* Makes the text bolder */
+}
+
+/* Add to Hero.css */
+.dynamic-text {
+  min-height: 1em; /* Adjust based on your font size to ensure enough space is reserved */
+  display: inline-block;
+  font-weight: bold !important; /* Adjust this value as needed to achieve the desired weight */
+  color: blueviolet !important; /* Ensures the min-height is respected */
+}
+
+.light .hero-subtext .dynamic-text,
+.light .hero-subtext p {
+  color: blueviolet !important; /* Black text for light mode */
+}
+
+.dark .hero-subtext .dynamic-text
+ {
+  color: blueviolet !important; /* Keeps text color blueviolet in dark mode */
+}
+
+.curse, .curse-active {
+  font-size: 1.1em; /* Adjust the font size to match your text if needed */
+  display: inline-block;
+  vertical-align: bottom; /* Aligns the curse with the text better */
+  margin-left: 2px; 
+  animation: blink-animation 1.2s linear infinite;
+}
+
+/* Cursor Visibility and Color in Light Mode */
+.light .curse, .light .curse-active {
+  color: blueviolet; /* Ensure curse is visible and colored appropriately in light mode */
+  opacity: 1; /* Always visible */
+}
+
+/* Consistent Cursor Animation for Blinking */
+@keyframes blink-animation {
+  0%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0.5;}
+  50% { opacity: 0; }
+}
+
+
+
+.dark .hero-container {
+  background-color: #000; /* Dark background for dark mode */
+}
+
+.light .hero-container {
+  background-color: #fff; /* Light background for light mode */
+}
+
+.dark .hero-text h1 {
+  color: #fff; /* White text for dark mode */
+}
+
+.light .hero-text h1 {
+  color: #000; /* Black text for light mode */
+}
+
+.dark .hero-subtext {
+  color: #fff; /* Light text for dark mode */
+  background-color: #000; /* Dark background for dark mode */
+}
+
+.light .hero-subtext {
+    /* Dark text for light mode */
+  background-color: #000000 !important; /* Light background for light mode */
+}
+ .light .hero-subtext p{
+  color: #ffffff !important;
+ }
+
+.dark .hero-text .introduction {
+  color: #fff !important; /* Ensures text is white in dark mode */
+}
+ .ama-button {
+  font-family: 'Libre Franklin', sans-serif;
+  background-color: blueviolet; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px; /* Adjust based on layout */
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.ama-button:hover {
+  background-color: rgb(66, 66, 66); /* Slightly darker on hover */
+}
+ 
+
+
+
+
+
+
+
+
+
+
+/* General styles already defined above */
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+  .hero-container {
+    flex-direction: column; /* Stack components vertically */
+    padding: 20px;
+    margin-top: 70px; /* Adjust padding for smaller screens */
+    height: auto; /* Allow the container to grow as needed */
+    align-items: center; /* Center-align the items for a vertical layout */
+    justify-content: flex-start; /* Start aligning items from the top */
+  }
+
+  .hero-text, .hero-subtext {
+    max-width: 100%; /* Allow text blocks to fill the container */
+    padding: 0; /* Remove padding from the left */
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Add some space between the elements */
+  }
+
+  .hero-text h1 {
+    font-size: 3em; /* Reduce the font size for the heading */
+    line-height: 1.1; /* Adjust line height for better readability */
+    margin-bottom: 20px; /* Space before the next section */
+  }
+
+  .hero-subtext {
+    border-radius: 0; /* Adjust or remove the border radius */
+    margin-right: 3px; /* Provide some padding inside the text block */
+    margin-top: 0; /* Reset any specific margin */
+    transform: none; /* Remove the translateY transformation */
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .introduction, .hero-subtext p {
+    font-size: 1.2em; /* Adjust the font size for readability */
+  }
+
+  .ama-button {
+    padding: 10px 15px; /* Slightly reduce button padding */
+    font-size: 1em; 
+    margin-bottom: 20px;/* Adjust button font size if necessary */
+  }
+  
+  /* Adjust the cursor size and alignment for smaller screens */
+  .curse, .curse-active {
+    font-size: 0.8em; /* Adjust the cursor size to better fit the text */
+  }
+}
+
