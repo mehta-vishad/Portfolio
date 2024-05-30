@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;900&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body.dark {
+  background-color: #000000;
+}
+
+body.dark h1,
+body.dark .support a {
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0; /* Start from the left */
+  background-color: #000000;
+  padding: 0 100px;
+  z-index: 1000;
+  color: #fff; /* Text color in dark mode */
+  transition: background-color 0.3s ease; /* Added transition for background color */
+  border-bottom: 2px solid #ccc; /* Grey horizontal line */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+
+
+.body.light .header {
+  background-color: #6e6e6e; /* White background in light mode */
+  color: #000; /* Text color in light mode */
+}
+
+.logo-container {
+  display: flex;
+  flex-grow: 0;
+  justify-content: flex-start;
+  margin-right: 300px;
+}
+
+img{
+  width: 175px; /* Adjust size as needed */
+  height: 40px; /* Maintain aspect ratio */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; /* Center the nav links horizontally */
+    align-items: center; /* Center the nav links vertically */
+    flex-grow: 2;
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+  }
+  
+  .nav-link {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 10px; /* Adjust spacing between nav links */
+    padding: 5px 10px; /* Add some padding for the background to have space around the text */
+    border-radius: 8px; /* Rounded corners for the rectangle */
+    transition: background-color 0.3s; /* Smooth transition for the background color */
+  }
+  
+  .nav-link:hover {
+    color: blueviolet; /* Keep your existing color change on hover */
+    background-color: #ffffff; /* Dark grey background on hover */
+  }
+  
+  .theme-switcher {
+    margin-right: -100px;
+    flex-grow: 2; /* Allows it to grow and be pushed to the end */
+    display: flex;
+    justify-content: flex-end; /* Aligns theme-switcher to the end */
+    position: relative;
+  }
+
+.checkbox {
+  opacity: 0;
+  position: relative;
+}
+
+.checkbox-label {
+  background-color: #000000;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  margin-right: 100px;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox:checked + .checkbox-label {
+  background-color: #fff; /* White background in dark mode */
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  background-color: #000; /* Black slider in dark mode */
+  transform: translateX(24px); /* Move the slider to the right in dark mode */
+}
+
+.checkbox:checked + .checkbox-label .fa-moon,
+.checkbox:checked + .checkbox-label .fa-sun {
+  color: #000; /* Black icons in dark mode */
+}
+
+.checkbox-label .ball {
+  background-color: #fff; /* White slider in light mode */
+  transition: transform 0.2s linear; /* Add transition for slider movement */
+}
+
+.checkbox-label .fa-moon,
+.checkbox-label .fa-sun {
+  color: #fff; /* White icons in light mode */
+}
+
+.checkbox-label .ball {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+.close-icon{
+  display: none;
+}
+
+.menu-icon {
+  display: none; /* Hides menu icon by default */
+}
+
+/* Adjustments for Mobile View */
+@media (max-width: 768px) {
+  .header {
+    padding: 0 20px; /* Reduces padding on mobile */
+  }
+
+  .logo-container {
+    justify-content: center; /* Centers the logo */
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Correctly centers the logo */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stacks the links vertically */
+    position: fixed;
+    left: 0;
+    top: 80px; /* Adjusted to not overlap the header */
+    width: 100%; /* Takes full width */
+    transform: translateX(-100%); /* Off-screen by default */
+    padding-top: 20px; /* Adds space at the top */
+    background-color: #000; /* Ensures it's visible */
+    color: #ffffff;
+  }
+
+  .nav-links.show {
+    transform: translateX(0); /* Brings menu into view */
+  }
+
+  .close-icon {
+    display: block; /* Shows the menu icon */
+    position: absolute;
+    left: 20px; /* Positions it towards the left */
+    top: 20px; /* Aligns it with the header vertically */
+  }
+
+  .menu-icon {
+    display: block; /* Shows the menu icon */
+    position: absolute;
+    left: 20px; /* Positions it towards the left */
+    top: 20px; /* Aligns it with the header vertically */
+  }
+
+  .theme-switcher {
+    margin-top: 20px; /* Pushes it to the bottom of the nav-links */
+    margin-bottom: 20px;
+    margin-left: 100px; /* Adds some space at the bottom */
+  }
+}
