@@ -5,7 +5,9 @@ import Loader from './Loader';
 import Hero from './Hero';
 import Carousel from './Carousel';
 import Projects from './Projects';
+import Timeline from './Timeline';
 import './App.css';
+import './Timeline.css';
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -55,6 +57,8 @@ const App: React.FC = () => {
           <Header darkMode={darkMode} toggleMode={toggleMode} />
           <Hero darkMode={darkMode} />
           <Carousel />
+          <Timeline darkMode={darkMode} />
+          
           <Projects projects={projects} darkMode={darkMode} />
         </>
       )}

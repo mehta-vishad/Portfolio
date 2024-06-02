@@ -30,7 +30,7 @@
   display: grid;
   gap: 2px; /* Reduced gap between tiles */
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(10, 150px); /* Adjust rows to accommodate all tiles */
+  grid-template-rows: repeat(10, 200px); /* Adjust rows to accommodate all tiles */
 }
 
 .project-tile {
@@ -44,7 +44,7 @@
 
 .project-tile-0 {
   grid-column: span 12;
-  grid-row: span 3;
+  grid-row: span 2;
 }
 
 .project-tile-1 {
@@ -68,7 +68,12 @@
 }
 
 .project-tile-5 {
-  grid-column: span 12;
+  grid-column: span 6;
+  grid-row: span 2; /* Ensure it has its own row */
+}
+
+.project-tile-6 {
+  grid-column: span 6;
   grid-row: span 2; /* Ensure it has its own row */
 }
 
@@ -114,7 +119,7 @@
 
   .projects-grid {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(10, 150px); /* Increase rows for smaller screens */
+    grid-template-rows: repeat(14, 150px); /* Increase rows for smaller screens */
   }
 
   .project-tile-0 {
@@ -130,6 +135,10 @@
     grid-column: span 6;
     grid-row: span 2;
   }
+  .project-tile-6 {
+    grid-column: span 6;
+    grid-row: span 2;
+  }
 }
 
 @media (max-width: 480px) {
@@ -139,14 +148,14 @@
 
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(12, 100px);
+    grid-template-rows: repeat(14, 100px);
   }
 
   .project-tile-0 {
     grid-column: span 2;
   }
 
-  .project-tile-1, .project-tile-2, .project-tile-3, .project-tile-4, .project-tile-5 {
+  .project-tile-1, .project-tile-2, .project-tile-3, .project-tile-4, .project-tile-5, .project-tile-6 {
     grid-column: span 2;
     grid-row: span 2;
   }

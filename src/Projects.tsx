@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Projects.css';
 import ProjectModal from './ProjectModal';
 
@@ -8,12 +8,12 @@ interface Project {
   image: string;
   link: string;
   techStack: string[];
-  technologiesUsed: {
-    frontend: string;
-    backend: string;
-    database: string;
-    apis: string[];
-    hosting: string[];
+  technologiesUsed?: {
+    frontend?: string;
+    backend?: string;
+    database?: string;
+    apis?: string[];
+    hosting?: string[];
   };
   keyFeatures: string[];
   challengesAndSolutions: string[];
@@ -29,6 +29,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects, darkMode }) => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const openModal = (project: Project) => {
+    console.log('Opening modal for project:', project);
     setSelectedProject(project);
   };
 
@@ -44,18 +45,17 @@ const Projects: React.FC<ProjectsProps> = ({ projects, darkMode }) => {
           <div
             key={index}
             className={`project-tile project-tile-${index}`}
-            onClick={() => openModal(project)}
             style={{ backgroundImage: `url(${project.image})` }}
+            onClick={() => openModal(project)}
           >
             <div className="overlay">
-              <h3 className="project-title">{project.title}</h3>
+              <div className="project-title">{project.title}</div>
             </div>
           </div>
         ))}
       </div>
-
       {selectedProject && (
-        <ProjectModal project={selectedProject} onClose={closeModal} darkMode={darkMode} />
+        <ProjectModal project={selectedProject} onClose={closeModal} />
       )}
     </div>
   );

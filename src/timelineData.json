@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Research Intern",
+      "company": "King Faisal University, Remote",
+      "date": "April 2022 - October 2022",
+      "description": "Innovated drone-based Computer Vision algorithms for crack detection, achieving 99.28% accuracy and cutting false positives by 20% with unique feature extraction such as paint exfoliation. Collaborated on research and co-authored an insightful paper on the utilization of shallow convolutional neural networks for drone-assisted structural integrity assessment, subsequently presented at the SMARTCOM 2023 conference."
+    },
+    {
+      "title": "Data Engineer Intern",
+      "company": "Discite Analytics and AI (a DynPro Company), Bangalore, India",
+      "date": "October 2021 - October 2022",
+      "description": "Engineered and optimized customized dashboards and chatbots, enhancing client interaction for over 4 clients. Spearheaded the development of an automated data acquisition system utilizing Selenium WebDriver, which was instrumental in attracting 3 major clients, each boasting over $1M in revenue. Orchestrated the integration of a chatbot with IoT devices’ REST endpoints in response to a client request, culminating in the successful launch of a AWS Lex chatbot for device control. Launched an NLP-driven resume parsing solution harnessing Spacy’s NER and Tesseract OCR technologies, resulting in a remarkable 50% increase in efficiency for identifying candidates with desired skill sets, significantly saving time, streamlining the recruitment process, and enhancing candidate selection."
+    },
+    {
+      "title": "Application Developer",
+      "company": "Freelancer, Gujarat, India",
+      "date": "January 2022 - March 2022",
+      "description": "Developed and implemented a Human Resource Management App using Flutter and Firebase, revolutionizing SME operations by eliminating paper-based processes and saving 20 human hours monthly for a local gas station chain."
+    }
+  ]
+  

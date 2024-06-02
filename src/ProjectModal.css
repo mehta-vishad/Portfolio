@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&display=swap');
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -33,7 +31,7 @@
   color: #fff;
 }
 
-.close-button {
+.close{
   position: absolute;
   top: 10px;
   right: 10px;
@@ -46,28 +44,27 @@
 
 .modal-title-container {
   display: flex;
-  justify-content: space-between; /* Align items with space between */
-  align-items: center; /* Vertically center items */
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
 }
 
 .modal-title {
-  font-size: 2em; /* Decreased font size */
-  margin-bottom: 20px; /* Adjusted margin */
-  text-align: left; /* Align to the left */
-}
-
-.modal-body {
-  padding-top: 40px; /* Added more padding to the top */
+  font-size: 3em;
+  text-align: left;
+  margin: 0;
 }
 
 .modal-main {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .modal-image-container {
   width: 50%;
   margin-top: 40px;
+  text-align: right;
 }
 
 .modal-image {
@@ -79,6 +76,7 @@
 .modal-text {
   width: 50%;
   text-align: left;
+  padding-left: 20px;
 }
 
 .modal-text h3 {
@@ -96,6 +94,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: flex-end;
+  width: 50%;
 }
 
 .tech-icon {
@@ -110,9 +110,8 @@ ul {
   text-align: left;
 }
 
-
 .key-features {
-  margin-top: 40px; /* Add margin to separate key features from other content */
+  margin-top: 40px;
 }
 
 .key-features h3 {
@@ -120,17 +119,33 @@ ul {
   margin-bottom: 10px;
 }
 
-.challenges-solutions {
-  margin-top: 20px; /* Add margin to separate challenges and solutions from other content */
+.challenges-and-solutions {
+  margin-top: 20px;
 }
 
-.challenges-solutions h3 {
+.challenges-and-solutions h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
 
+.conclusion h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
 
+.project-link {
+  margin-top: 20px;
+}
 
+.project-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.project-link a:hover {
+  text-decoration: underline;
+}
 
 @media (max-width: 600px) {
   .modal-content {
@@ -146,7 +161,8 @@ ul {
     flex-direction: column;
   }
 
-  .modal-image-container, .modal-text {
+  .modal-image-container,
+  .modal-text {
     width: 100%;
   }
 
@@ -154,4 +170,9 @@ ul {
     width: 40px;
     height: 40px;
   }
+}
+
+.dark-mode .modal-content {
+  background: #333;
+  color: #fff;
 }

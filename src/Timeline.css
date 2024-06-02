@@ -1,0 +1,20 @@
+.timeline.dark-mode {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .timeline.light-mode {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .vertical-timeline-element-title {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+  
+  .vertical-timeline-element-subtitle {
+    font-size: 1em;
+    color: gray;
+  }
+  
