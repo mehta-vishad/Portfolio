@@ -1,0 +1,228 @@
+.footer {
+    padding: 20px 100px;
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 100px;
+  }
+  
+  .footer.light-mode {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .footer.dark-mode {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .footer-column {
+    flex: 1;
+  }
+  
+  .big-bold-text {
+    text-align: left;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 1.2; /* Adjust line height for better spacing */
+  }
+  
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em; /* Bigger font size */
+    margin: 10px 0;
+    margin-left: 150px;
+  }
+  
+  .contact-link {
+    margin-left: 8px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    padding: 0 5px; /* Add padding for the highlight effect */
+  }
+  
+  .contact-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: blueviolet;
+    z-index: -1;
+    transition: width 0.3s ease;
+  }
+  
+  .contact-link:hover::after {
+    width: 100%;
+  }
+  
+  .contact-link:hover {
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .separator {
+    height: 1px;
+    background: grey;
+    margin: 20px 100px;
+    width: calc(100% - 200px); /* 100px from each side */
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+  }
+  
+  .left-side {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .right-side {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-link {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    padding: 0 5px; /* Add padding for the highlight effect */
+  }
+  
+  .footer-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: blueviolet;
+    z-index: -1;
+    transition: width 0.3s ease;
+  }
+  
+  .footer-link:hover::after {
+    width: 100%;
+  }
+  
+  .footer-link:hover {
+    color: #fff;
+    z-index: 1;
+  }
+  
+
+
+
+
+  @media (max-width: 1024px) {
+    .footer {
+      padding: 20px 50px;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  
+    .contact-info p {
+      margin-left: 0;
+    }
+  
+    .footer-bottom {
+      padding: 0 50px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .separator {
+      margin: 20px 50px;
+      width: calc(100% - 100px);
+    }
+  
+    .left-side {
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .right-side {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Mobile Phones */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 20px 20px;
+    }
+  
+    .footer-content {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .big-bold-text {
+      font-size: 1.5em;
+    }
+  
+    .contact-info p {
+      font-size: 1em;
+    }
+  
+    .footer-bottom {
+      padding: 0 20px;
+    }
+  
+    .separator {
+      margin: 20px 20px;
+      width: calc(100% - 40px);
+    }
+  
+    .left-side {
+      gap: 5px;
+    }
+  }
+  
+  /* Small Mobile Phones */
+  @media (max-width: 480px) {
+    .footer-content {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .big-bold-text {
+      font-size: 1.2em;
+    }
+  
+    .contact-info p {
+      font-size: 0.8em;
+    }
+  
+    .footer-bottom {
+      padding: 0 10px;
+    }
+  
+    .separator {
+      margin: 20px 10px;
+      width: calc(100% - 20px);
+    }
+  }

@@ -25,9 +25,9 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
           Challenge.
         </h1>
         <p className="introduction">
-          Introducing VishadGPT, a fine-tuned GPT model trained on data based on my life and experiences, ready to answer any question you may have about me!
+          Introducing TalkingCV, a Langchain/RAG based chatbot with the context of my academic and professional life, ready to answer any question you may have about me!
         </p>
-        <button className="ama-button" onClick={() => window.location.href = '#ama-section'}>
+        <button className="ama-button" onClick={() => window.location.href = '#AMA'}>
           Ask Me Anything
         </button>
       </div>

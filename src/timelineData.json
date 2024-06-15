@@ -1,21 +1,34 @@
 [
-    {
+  {
+      "title": "Software Engineering Systems Graduate",
+      "company": "Northeastern University",
+      "date": "September 2023 - Expected May 2025",
+      "degree": "MS in Software Engineering Systems",
+      "description": "Pursuing a Master's degree with a focus on software engineering, system design, and advanced algorithms. Maintaining a GPA of 4.0."
+  },
+  {
       "title": "Research Intern",
       "company": "King Faisal University, Remote",
       "date": "April 2022 - October 2022",
-      "description": "Innovated drone-based Computer Vision algorithms for crack detection, achieving 99.28% accuracy and cutting false positives by 20% with unique feature extraction such as paint exfoliation. Collaborated on research and co-authored an insightful paper on the utilization of shallow convolutional neural networks for drone-assisted structural integrity assessment, subsequently presented at the SMARTCOM 2023 conference."
-    },
-    {
+      "description": "Developed drone-based crack detection algorithms with 99.28% accuracy and 20% fewer false positives. Co-authored a paper on shallow CNNs for drone-assisted structural assessments, presented at SMARTCOM 2023."
+  },
+  {
       "title": "Data Engineer Intern",
       "company": "Discite Analytics and AI (a DynPro Company), Bangalore, India",
       "date": "October 2021 - October 2022",
-      "description": "Engineered and optimized customized dashboards and chatbots, enhancing client interaction for over 4 clients. Spearheaded the development of an automated data acquisition system utilizing Selenium WebDriver, which was instrumental in attracting 3 major clients, each boasting over $1M in revenue. Orchestrated the integration of a chatbot with IoT devices’ REST endpoints in response to a client request, culminating in the successful launch of a AWS Lex chatbot for device control. Launched an NLP-driven resume parsing solution harnessing Spacy’s NER and Tesseract OCR technologies, resulting in a remarkable 50% increase in efficiency for identifying candidates with desired skill sets, significantly saving time, streamlining the recruitment process, and enhancing candidate selection."
-    },
-    {
+      "description": "Engineered and optimized dashboards and chatbots for 4+ clients. Developed an automated data acquisition system, attracting 3 major clients with $1M+ revenue each. Launched an AWS Lex chatbot for IoT device control and an NLP-driven resume parser, increasing candidate identification efficiency by 50%."
+  },
+  {
       "title": "Application Developer",
       "company": "Freelancer, Gujarat, India",
       "date": "January 2022 - March 2022",
       "description": "Developed and implemented a Human Resource Management App using Flutter and Firebase, revolutionizing SME operations by eliminating paper-based processes and saving 20 human hours monthly for a local gas station chain."
-    }
-  ]
-  
+  },
+  {
+      "title": "Computer Science Engineering Undergraduate",
+      "company": "SRM University",
+      "date": "June 2019 - May 2023",
+      "degree": "B.Tech in Computer Science and Engineering, specialization in Cloud Computing",
+      "description": "Completed undergraduate studies with a focus on cloud computing and security, achieving a GPA of 9.3/10."
+  }
+]

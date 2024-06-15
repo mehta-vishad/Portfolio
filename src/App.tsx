@@ -6,6 +6,9 @@ import Hero from './Hero';
 import Carousel from './Carousel';
 import Projects from './Projects';
 import Timeline from './Timeline';
+import Chatbot from './Chatbot';
+import Resume from './Resume';
+import Footer from './Footer';
 import './App.css';
 import './Timeline.css';
 
@@ -57,9 +60,22 @@ const App: React.FC = () => {
           <Header darkMode={darkMode} toggleMode={toggleMode} />
           <Hero darkMode={darkMode} />
           <Carousel />
-          <Timeline darkMode={darkMode} />
+          <section id="AMA">
+            <Chatbot />
+          </section>
+          <section id="aboutme">
+            <Timeline darkMode={darkMode} />
+          </section>
+          <section id="projects">
+            <Projects projects={projects} darkMode={darkMode} />
+          </section>
+          <section id="resume">
+            <Resume />
+          </section>
           
-          <Projects projects={projects} darkMode={darkMode} />
+          <section id="contact">
+            <Footer darkMode={darkMode} />
+          </section>
         </>
       )}
     </div>

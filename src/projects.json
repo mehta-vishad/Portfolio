@@ -29,6 +29,32 @@
     "conclusion": "This project exemplifies a comprehensive application of modern web development technologies to solve real-world problems. By leveraging the power of React, Node.js, Express, and MongoDB Atlas, combined with essential third-party APIs, the platform offers a seamless experience for air commuters looking to share luggage space, making air travel more economical and efficient. Hosting on Vercel and Render ensures reliable and scalable delivery of both the frontend and backend services."
   },
   {
+    "title": "Portfolio Website with Chatbot",
+    "overview": "Developed a portfolio website using Vite, TypeScript, and React, integrated with a backend powered by FastAPI. The website features a chatbot that provides interactive responses based on user queries, showcasing personal projects and professional experience.",
+    "image": "/port.gif",
+    "link": "https://portfolio-website-link.com",
+    "techStack": ["/vite.png", "/ts.webp", "/React.png", "/fastapi.png", "/openai.webp","/hf.png"],
+    "technologiesUsed": {
+        "frontend": "React, TypeScript, Vite",
+        "backend": "FastAPI",
+        "apis": ["OpenAI", "HuggingFace"],
+        "hosting": [ "Render "]
+    },
+    "keyFeatures": [
+        "Interactive chatbot developed using OpenAI's GPT-3.5, capable of answering queries based on predefined data and user interactions.",
+        "Implemented FastAPI for the backend, ensuring efficient handling of API requests and integration with the frontend.",
+        "Utilized Vite for rapid development and optimized build processes, enhancing the overall performance of the website.",
+        "Developed with TypeScript to ensure type safety and improved code maintainability.",
+        "Hosted the frontend on Render, providing a fast and reliable delivery of the portfolio site as a Web Service.",
+        "Deployed the backend on Render, offering a scalable environment for API endpoints and chatbot functionalities and as a Private Service."
+    ],
+    "challengesAndSolutions": [
+        "Ensured seamless integration of OpenAI and HuggingFace APIs by conducting thorough testing and handling potential edge cases, maintaining data integrity and security.",
+        "Designed the backend with a focus on scalability, allowing the platform to handle multiple concurrent user interactions without performance degradation."
+    ],
+    "conclusion": "This project demonstrates the effective use of modern web development technologies to create a dynamic and interactive portfolio website. Leveraging Vite, TypeScript, React, and FastAPI, along with powerful APIs from OpenAI and HuggingFace, the platform offers a sophisticated user experience. Hosting on Render ensures reliable and scalable delivery of both the frontend and backend services. Fun Fact: You're exploring this project right now!"
+  },
+  {
     "title": "IoT-Enabled Device Control via AWS Lex Chatbot",
     "overview": "Developed an innovative solution to control and monitor IoT-enabled white goods manufactured by a leading provider. This project involved integrating REST endpoints provided by the manufacturer with an AWS Lex chatbot deployed on Slack. The chatbot allows users to control various attributes of appliances such as fire alarms, fans, generators, HVACs, and query their status in real-time.",
     "image": "/chatbot.gif",

@@ -9,6 +9,10 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ darkMode, toggleMode }) => {
   const [isNavVisible, setIsNavVisible] = useState(false);
 
+  const handleLinkClick = () => {
+    setIsNavVisible(false);
+  };
+
   return (
     <header className={`header ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <div className="logo-container">
@@ -25,21 +29,19 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleMode }) => {
         <div className="close-icon" onClick={() => setIsNavVisible(false)}>
           <i className="fas fa-times"></i> {/* Close Icon */}
         </div>
-        <a href="#home" className="nav-link">Home</a>
-        <a href="#ama" className="nav-link">AMA</a>
-        <a href="#projects" className="nav-link">Projects</a>
-        <a href="#contact" className="nav-link">Contact Me</a>
-        {/* Move dark mode switch inside the nav */}
-        
+        <a href="#AMA" className="nav-link" onClick={handleLinkClick}>AMA</a>
+        <a href="#aboutme" className="nav-link" onClick={handleLinkClick}>About Me</a>
+        <a href="#projects" className="nav-link" onClick={handleLinkClick}>Projects</a>
+        <a href="#contact" className="nav-link" onClick={handleLinkClick}>Contact Me</a>
       </nav>
       <div className="theme-switcher">
-          <input type="checkbox" className="checkbox" id="checkbox" checked={darkMode} onChange={toggleMode} />
-          <label htmlFor="checkbox" className="checkbox-label">
-            <i className="fas fa-moon"></i>
-            <i className="fas fa-sun"></i>
-            <span className="ball"></span>
-          </label>
-        </div>
+        <input type="checkbox" className="checkbox" id="checkbox" checked={darkMode} onChange={toggleMode} />
+        <label htmlFor="checkbox" className="checkbox-label">
+          <i className="fas fa-moon"></i>
+          <i className="fas fa-sun"></i>
+          <span className="ball"></span>
+        </label>
+      </div>
     </header>
   );
 };
