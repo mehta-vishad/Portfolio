@@ -71,7 +71,9 @@ const Chatbot: React.FC = () => {
 
   return (
     <div className="chatbot-container">
-      <div className={`background-blur ${!isGreeting ? 'focused' : ''}`}></div>
+      <div
+    className={`background-blur ${!isGreeting ? 'focused' : ''}`}
+    style={{ background: `url('./NLP.jpeg') no-repeat center center`}}></div>
       <div className="chat-content">
         {isGreeting ? (
           <div className="greeting">
