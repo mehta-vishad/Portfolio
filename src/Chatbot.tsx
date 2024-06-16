@@ -45,7 +45,7 @@ const Chatbot: React.FC = () => {
 
     const conversationHistory = updatedMessages.map((message) => message.text);
 
-    const response = await fetch('http://165.227.105.139:8000/chat', {
+    const response = await fetch('https://7c26-165-227-105-139.ngrok-free.app/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question: input, visitor_name: visitorName, visitor_company: visitorCompany, conversation_history: conversationHistory }),
