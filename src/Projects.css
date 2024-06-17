@@ -3,7 +3,7 @@
 
 .projects-container {
   width: 75%;
-  margin: 0 auto; /* This centers the container */
+  margin: 0 auto; 
   padding: 20px;
   transition: background-color 0.3s;
 }
@@ -28,9 +28,9 @@
 
 .projects-grid {
   display: grid;
-  gap: 2px; /* Reduced gap between tiles */
+  gap: 2px; 
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 200px); /* Adjust rows to accommodate all tiles */
+  grid-template-rows: repeat(8, 200px);
 }
 
 .project-tile {
@@ -38,7 +38,7 @@
   background-size: cover;
   background-position: center;
   cursor: pointer;
-  border-radius: 0; /* Remove border radius for sharp edges */
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -73,12 +73,12 @@
 
 .project-tile-6 {
   grid-column: span 6;
-  grid-row: span 2; /* Ensure it has its own row */
+  grid-row: span 2;
 }
 
 .project-tile-7 {
   grid-column: span 6;
-  grid-row: span 2; /* Ensure it has its own row */
+  grid-row: span 2; 
 }
 
 .overlay {
@@ -91,39 +91,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s; /* Add transition effect */
+  opacity: 0; 
+  transition: opacity 0.3s;
 }
 
 .project-title {
   color: white;
-  font-size: 2.5em; /* Make the text bigger */
+  font-size: 2.5em;
   font-weight: bold;
-  text-align: left; /* Align text to the left */
-  font-family: 'Libre Franklin', sans-serif; /* Use Libre Franklin font */
+  text-align: left; 
+  font-family: 'Libre Franklin', sans-serif; 
   position: absolute;
-  bottom: 10px; /* Align title text to the bottom of the tile */
-  left: 20px; /* Align title text to the left of the tile */
-  transform: translateY(100%); /* Initially move title text below the tile */
-  transition: transform 0.3s; /* Add transition effect */
+  bottom: 10px; 
+  left: 20px; 
+  transform: translateY(100%); 
+  transition: transform 0.3s; 
 }
 
 .project-tile:hover .overlay {
-  opacity: 1; /* Show overlay on hover */
+  opacity: 1;
 }
 
 .project-tile:hover .project-title {
-  transform: translateY(0); /* Move title text up on hover */
+  transform: translateY(0); 
 }
 
 @media (max-width: 768px) {
   .projects-container {
-    width: 90%; /* Use more width on smaller screens */
+    width: 90%;
   }
 
   .projects-grid {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(14, 150px); /* Increase rows for smaller screens */
+    grid-template-rows: repeat(14, 150px); 
   }
 
   .project-tile-0 {
@@ -147,7 +147,7 @@
 
 @media (max-width: 480px) {
   .projects-container {
-    width: 100%; /* Use full width on very small screens */
+    width: 100%; 
   }
 
   .projects-grid {
