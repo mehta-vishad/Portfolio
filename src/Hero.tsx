@@ -1,18 +1,18 @@
 import React from 'react';
 import './Hero.css';
-import useTypewriter from './useTypewriter'; // Ensure the path is correct
+import useTypewriter from './useTypewriter'; 
 
 interface HeroProps {
-  darkMode: boolean; // Indicates whether dark mode is enabled
+  darkMode: boolean; 
 }
 
 const Hero: React.FC<HeroProps> = ({ darkMode }) => {
   const heroClassName = `hero-container ${darkMode ? 'dark' : 'light'}`;
-  // Correct usage of the useTypewriter hook
+  
   const [typingText, cursorVisible] = useTypewriter({
-    texts: ['A Software Engineer.','A Full-Stack Developer.','An AI Researcher.','A Passionate Problem Solver.'], // Use "texts" here
+    texts: ['A Software Engineer.','A Full-Stack Developer.','An AI Researcher.','A Passionate Problem Solver.'], 
     avgTypingDelay: 150,
-    avgBackspacingDelay: 75, // Corrected property name
+    avgBackspacingDelay: 75, 
   });
 
   return (
