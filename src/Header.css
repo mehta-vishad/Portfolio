@@ -36,22 +36,22 @@ body.dark .support a {
   align-items: center;
   position: fixed;
   top: 0;
-  left: 0; /* Start from the left */
+  left: 0; 
   background-color: #000000;
   padding: 0 100px;
   z-index: 1000;
-  color: #fff; /* Text color in dark mode */
-  transition: background-color 0.3s ease; /* Added transition for background color */
-  border-bottom: 2px solid #ccc; /* Grey horizontal line */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+  color: #fff;
+  transition: background-color 0.3s ease; 
+  border-bottom: 2px solid #ccc; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   
 }
 
 
 
 .body.light .header {
-  background-color: #6e6e6e; /* White background in light mode */
-  color: #000; /* Text color in light mode */
+  background-color: #6e6e6e;
+  color: #000;
 }
 
 .logo-container {
@@ -62,41 +62,41 @@ body.dark .support a {
 }
 
 img{
-  width: 175px; /* Adjust size as needed */
-  height: 40px; /* Maintain aspect ratio */
+  width: 175px; 
+  height: 40px; 
 }
 
 .nav-links {
     display: flex;
-    justify-content: center; /* Center the nav links horizontally */
-    align-items: center; /* Center the nav links vertically */
+    justify-content: center; 
+    align-items: center; 
     flex-grow: 2;
-    margin: 0; /* Remove any default margins */
-    padding: 0; /* Remove any default padding */
+    margin: 0; 
+    padding: 0;
   }
   
   .nav-link {
     color: inherit;
     text-decoration: none;
-    margin: 0 10px; /* Adjust spacing between nav links */
-    padding: 5px 10px; /* Add some padding for the background to have space around the text */
-    border-radius: 8px; /* Rounded corners for the rectangle */
-    transition: background-color 0.3s; /* Smooth transition for the background color */
+    margin: 0 10px; 
+    padding: 5px 10px; 
+    border-radius: 8px; 
+    transition: background-color 0.3s; 
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 700;
     font-size: 1.2em;
   }
   
   .nav-link:hover {
-    color: blueviolet; /* Keep your existing color change on hover */
-    background-color: #ffffff; /* Dark grey background on hover */
+    color: blueviolet;
+    background-color: #ffffff;
   }
   
   .theme-switcher {
     margin-right: -100px;
-    flex-grow: 2; /* Allows it to grow and be pushed to the end */
+    flex-grow: 2;
     display: flex;
-    justify-content: flex-end; /* Aligns theme-switcher to the end */
+    justify-content: flex-end;
     position: relative;
   }
 
@@ -120,12 +120,12 @@ img{
 }
 
 .checkbox:checked + .checkbox-label {
-  background-color: #fff; /* White background in dark mode */
+  background-color: #fff; 
 }
 
 .checkbox:checked + .checkbox-label .ball {
-  background-color: #000; /* Black slider in dark mode */
-  transform: translateX(24px); /* Move the slider to the right in dark mode */
+  background-color: #000;
+  transform: translateX(24px); 
 }
 
 .checkbox:checked + .checkbox-label .fa-moon,
@@ -134,13 +134,13 @@ img{
 }
 
 .checkbox-label .ball {
-  background-color: #fff; /* White slider in light mode */
-  transition: transform 0.2s linear; /* Add transition for slider movement */
+  background-color: #fff; 
+  transition: transform 0.2s linear; 
 }
 
 .checkbox-label .fa-moon,
 .checkbox-label .fa-sun {
-  color: #fff; /* White icons in light mode */
+  color: #fff; 
 }
 
 .checkbox-label .ball {
@@ -163,56 +163,56 @@ img{
 }
 
 .menu-icon {
-  display: none; /* Hides menu icon by default */
+  display: none; 
 }
 
-/* Adjustments for Mobile View */
+
 @media (max-width: 768px) {
   .header {
-    padding: 0 20px; /* Reduces padding on mobile */
+    padding: 0 20px; 
   }
 
   .logo-container {
-    justify-content: center; /* Centers the logo */
+    justify-content: center; 
     position: absolute;
     width: 100%;
     left: 50%;
-    transform: translateX(-50%); /* Correctly centers the logo */
+    transform: translateX(-50%); 
   }
 
   .nav-links {
-    flex-direction: column; /* Stacks the links vertically */
+    flex-direction: column; 
     position: fixed;
     left: 0;
-    top: 80px; /* Adjusted to not overlap the header */
-    width: 100%; /* Takes full width */
-    transform: translateX(-100%); /* Off-screen by default */
-    padding-top: 20px; /* Adds space at the top */
-    background-color: #000; /* Ensures it's visible */
+    top: 80px; 
+    width: 100%; 
+    transform: translateX(-100%); 
+    padding-top: 20px; 
+    background-color: #000; 
     color: #ffffff;
   }
 
   .nav-links.show {
-    transform: translateX(0); /* Brings menu into view */
+    transform: translateX(0); 
   }
 
   .close-icon {
-    display: block; /* Shows the menu icon */
+    display: block;
     position: absolute;
-    left: 20px; /* Positions it towards the left */
-    top: 20px; /* Aligns it with the header vertically */
+    left: 20px; 
+    top: 20px; 
   }
 
   .menu-icon {
-    display: block; /* Shows the menu icon */
+    display: block; 
     position: absolute;
-    left: 20px; /* Positions it towards the left */
-    top: 20px; /* Aligns it with the header vertically */
+    left: 20px; 
+    top: 20px; 
   }
 
   .theme-switcher {
-    margin-top: 20px; /* Pushes it to the bottom of the nav-links */
+    margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 100px; /* Adds some space at the bottom */
+    margin-left: 100px; 
   }
 }
