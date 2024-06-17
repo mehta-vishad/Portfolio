@@ -30,13 +30,13 @@
     text-align: left;
     font-size: 1.8em;
     font-weight: bold;
-    line-height: 1.2; /* Adjust line height for better spacing */
+    line-height: 1.2;
   }
   
   .contact-info p {
     display: flex;
     align-items: center;
-    font-size: 1.2em; /* Bigger font size */
+    font-size: 1.2em; 
     margin: 10px 0;
     margin-left: 150px;
   }
@@ -47,7 +47,7 @@
     text-decoration: none;
     color: inherit;
     position: relative;
-    padding: 0 5px; /* Add padding for the highlight effect */
+    padding: 0 5px; 
   }
   
   .contact-link::after {
@@ -80,7 +80,7 @@
     height: 1px;
     background: grey;
     margin: 20px 100px;
-    width: calc(100% - 200px); /* 100px from each side */
+    width: calc(100% - 200px);
   }
   
   .footer-bottom {
@@ -103,7 +103,7 @@
     text-decoration: none;
     color: inherit;
     position: relative;
-    padding: 0 5px; /* Add padding for the highlight effect */
+    padding: 0 5px;
   }
   
   .footer-link::after {
@@ -169,7 +169,6 @@
     }
   }
   
-  /* Mobile Phones */
   @media (max-width: 768px) {
     .footer {
       padding: 20px 20px;
@@ -202,7 +201,7 @@
     }
   }
   
-  /* Small Mobile Phones */
+  
   @media (max-width: 480px) {
     .footer-content {
       margin-left: 10px;
