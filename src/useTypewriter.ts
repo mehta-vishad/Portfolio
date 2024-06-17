@@ -20,25 +20,25 @@ const useTypewriter = ({
   useEffect(() => {
     const currentText = texts[textIndex];
 
-    // Function to update text based on current phase (typing or deleting)
+    
     const updateText = () => {
       if (isDeleting) {
-        // Delete character
+       
         setDisplayedText(currentText.slice(0, charIndex - 1));
         setCharIndex(charIndex - 1);
       } else {
-        // Add character
+        
         setDisplayedText(currentText.slice(0, charIndex + 1));
         setCharIndex(charIndex + 1);
       }
     };
 
-    // Determine whether to switch phase or move to the next text
+    
     if (isDeleting && charIndex === 0) {
-      setIsDeleting(false); // Switch to typing phase
-      setTextIndex((textIndex + 1) % texts.length); // Move to the next text
+      setIsDeleting(false); 
+      setTextIndex((textIndex + 1) % texts.length); 
     } else if (!isDeleting && charIndex === currentText.length) {
-      setTimeout(() => setIsDeleting(true), 1300); // Pause before starting to delete
+      setTimeout(() => setIsDeleting(true), 1300); 
     }
 
     const typingDelay = isDeleting ? avgBackspacingDelay : avgTypingDelay;
@@ -52,7 +52,7 @@ const useTypewriter = ({
                 clearInterval(cursorInterval);};
   }, [texts, isDeleting, textIndex, charIndex, avgTypingDelay, avgBackspacingDelay]);
 
-  return [`${displayedText}`,cursorVisible]; // Always show the cursor
+  return [`${displayedText}`,cursorVisible]; 
 };
 
 export default useTypewriter;
