@@ -20,9 +20,9 @@
   
 
 .entry-subtext {
-    color: #ccc; /* Light grey color for the subtext */
-    font-size: 1.2rem; /* Smaller font size than the main text */
-    margin-top: 10px; /* Spacing above the subtext */
+    color: #ccc; 
+    font-size: 1.2rem; 
+    margin-top: 10px; 
     font-family: 'Libre Franklin', sans-serif;
 }
 
@@ -52,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px; /* Padding to ensure the image is not too close to the edge */
+    padding: 10px;
 }
 
 .entry-text {
@@ -63,8 +63,8 @@
 .cursor {
     opacity: 0;
     background-color: white;
-    width: 15px; /* Makes the cursor fatter */
-    height: 55px; /* Adjust height to match your font size */
+    width: 15px; 
+    height: 55px; 
     display: inline-block;
     margin-left: 5px;
     animation: blink-animation 1s infinite;
@@ -83,7 +83,7 @@
 .gif-image {
     height: 120%;
     width: 140%;
-    object-fit: contain; /* Ensures the image is fully visible and maintains aspect ratio */
+    object-fit: contain; 
 }
 
 .hint {
@@ -96,28 +96,28 @@
 .exclamation-icon {
     font-size: 1.5rem;
     margin-right: 10px;
-    padding: 10px; /* Adjust the padding to make the circle size you want */
-    background-color: grey; /* This is the color of the circle */
-    border-radius: 50%; /* This makes the background into a circle */
-    display: inline-flex; /* This allows us to center the text inside the circle */
+    padding: 10px;
+    background-color: grey;
+    border-radius: 50%; 
+    display: inline-flex; 
     align-items: center;
     justify-content: center;
-    width: 1.5rem; /* Make the circle a fixed width */
-    height: 1.5rem; /* Make the circle a fixed height */
+    width: 1.5rem; 
+    height: 1.5rem; 
 }
 
 .shift-image {
     height: 40px;
-    width: 90px; /* Fixed height for the key images */
-    margin: 0 10px; /* Margins to space out the images and text */
+    width: 90px; 
+    margin: 0 10px; 
 }
 
 .dot-image {
     height: 40px;
-    width: 40px; /* Fixed height for the key images */
-    margin: 0 5px; /* Margins to space out the images and text */
+    width: 40px; 
+    margin: 0 5px; 
 }
 
 .pressed {
-    transform: scale(1.2); /* Make the image larger to indicate it's pressed */
+    transform: scale(1.2);
   }
