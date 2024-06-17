@@ -12,9 +12,9 @@
   }
   
   .carousel-image {
-    margin-right: 50px; /* Adjust space between images */
+    margin-right: 50px; 
     height: 80px;
-    width: 80px; /* Fixed width for images */
+    width: 80px; 
   }
   
   @keyframes scroll {
@@ -22,7 +22,7 @@
       transform: translateX(0);
     }
     100% {
-      /* Scroll exactly the width of a single set of images */
+      
       transform: translateX(calc(-1 * (70px + 50px) * (18)));
     }
   }
