@@ -20,8 +20,7 @@ const Carousel = () => {
     { src: './mongo.webp', alt: 'mongo' },
     { src: './flutter.png', alt: 'flutter' },
     { src: './firebase.png', alt: 'firebase' },
-    // ... repeat for each image you have
-    // No need to duplicate the array; the CSS will handle the looping
+    
   ];
 
   return (
