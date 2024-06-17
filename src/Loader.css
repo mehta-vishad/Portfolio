@@ -9,8 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0); /* Adjust background as needed */
-    z-index: 1050; /* Ensure high z-index to overlay content */
+    background-color: rgba(0, 0, 0); 
+    z-index: 1050; 
   }
   
   
