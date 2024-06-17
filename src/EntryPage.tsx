@@ -21,7 +21,7 @@ const EntryPage = ({ onEntryConfirmed }: { onEntryConfirmed: () => void }) => {
       } else if (event.key === '.') {
         setDotPressed(true);
       } else if (event.key === '>') {
-        // This checks if ">" was input directly, catering for keyboards where ">" is a single key press.
+       
         onEntryConfirmed();
       }
     };
