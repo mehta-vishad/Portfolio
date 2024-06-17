@@ -10,13 +10,13 @@ body {
 }
 
 .dark-mode {
-  background-color: #000000; /* Dark mode background color */
-  color: #fff; /* Dark mode text color */
+  background-color: #000000; 
+  color: #fff;
 }
 
 .light-mode {
-  background-color: #fff; /* Light mode background color */
-  color: #000; /* Light mode text color */
+  background-color: #fff; 
+  color: #000; 
 }
 
 html {
@@ -26,8 +26,8 @@ html {
 /* Add a top offset to each section */
 section {
   position: relative;
-  padding-top: 100px; /* Adjust this based on your header height */
-  margin-top: -80px; /* Adjust this based on your header height */
+  padding-top: 100px; 
+  margin-top: -80px; 
 }
 
 .header {
@@ -35,7 +35,7 @@ section {
   width: 100%;
   top: 0;
   z-index: 1000;
-  height: 80px; /* Adjust based on your actual header height */
+  height: 80px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,10 +77,10 @@ section {
     display: none;
     flex-direction: column;
     position: fixed;
-    top: 80px; /* Adjust based on your actual header height */
+    top: 80px; 
     left: 0;
     width: 100%;
-    height: calc(100% - 80px); /* Adjust based on your actual header height */
+    height: calc(100% - 80px);
     background-color: inherit;
     padding-top: 20px;
   }
