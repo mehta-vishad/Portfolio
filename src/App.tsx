@@ -25,12 +25,16 @@ const App: React.FC = () => {
       .then(response => response.json())
       .then(data => {
         setProjects(data);
-        setIsLoading(false); // Set loading to false once data is fetched
       })
-      .catch(error => {
-        console.error('Error loading project data:', error);
-        setIsLoading(false); // Set loading to false even if there's an error
-      });
+      .catch(error => console.error('Error loading project data:', error));
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false); // Set loading to false after 3 seconds
+    }, 3000);
+
+    return () => clearTimeout(timer); // Cleanup the timer
   }, []);
 
   return (
