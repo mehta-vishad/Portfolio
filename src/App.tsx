@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
-import Loader from './Loader';
 import Hero from './Hero';
 import Carousel from './Carousel';
 import Projects from './Projects';
@@ -13,7 +12,6 @@ import './Timeline.css';
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
-  const [isLoading, setIsLoading] = useState(false);
   const [projects, setProjects] = useState([]);
 
   const toggleMode = () => {
@@ -29,30 +27,24 @@ const App: React.FC = () => {
 
   return (
     <div className={darkMode ? 'dark-mode' : 'light-mode'}>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <Header darkMode={darkMode} toggleMode={toggleMode} />
-          <Hero darkMode={darkMode} />
-          <Carousel />
-          <section id="AMA">
-            <Chatbot />
-          </section>
-          <section id="aboutme">
-            <Timeline darkMode={darkMode} />
-          </section>
-          <section id="projects">
-            <Projects projects={projects} darkMode={darkMode} />
-          </section>
-          <section id="resume">
-            <Resume />
-          </section>
-          <section id="contact">
-            <Footer darkMode={darkMode} />
-          </section>
-        </>
-      )}
+      <Header darkMode={darkMode} toggleMode={toggleMode} />
+      <Hero darkMode={darkMode} />
+      <Carousel />
+      <section id="AMA">
+        <Chatbot />
+      </section>
+      <section id="aboutme">
+        <Timeline darkMode={darkMode} />
+      </section>
+      <section id="projects">
+        <Projects projects={projects} darkMode={darkMode} />
+      </section>
+      <section id="resume">
+        <Resume />
+      </section>
+      <section id="contact">
+        <Footer darkMode={darkMode} />
+      </section>
     </div>
   );
 };
