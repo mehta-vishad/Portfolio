@@ -13,7 +13,7 @@ import './Timeline.css';
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
-  const [isLoading, setIsLoading] = useState(true); // Start with loading set to true
+  const [isLoading, setIsLoading] = useState(true); 
   const [projects, setProjects] = useState([]);
 
   const toggleMode = () => {
@@ -31,10 +31,10 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false); // Set loading to false after 3 seconds
+      setIsLoading(false); 
     }, 3000);
 
-    return () => clearTimeout(timer); // Cleanup the timer
+    return () => clearTimeout(timer);
   }, []);
 
   return (
