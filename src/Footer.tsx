@@ -32,12 +32,6 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
               LinkedIn
             </a>
           </p>
-          <p>
-            <FaGithub className="icon" />
-            <a href="https://github.com/mehta-vishad" className="contact-link" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
-          </p>
         </div>
       </div>
       <div className="separator"></div>
